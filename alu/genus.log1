@@ -1,0 +1,236 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[11:04:44.395633] Configured Lic search path (21.01-s002): 5280@CadenceServer
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: 
+Date:    Fri Jul 25 11:04:44 2025
+Host:    cadence8 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*1physical cpu*Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz 6144KB) (3701960KB)
+PID:     19899
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[11:04:44.521315] Periodic Lic check successful
+[11:04:44.521330] Feature usage summary:
+[11:04:44.521331] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (21 seconds elapsed).
+
+WARNING: This version of the tool is 1127 days old.
+@genus:root: 1> read_libs /home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@genus:root: 2> read_hdl ALU.v
+@genus:root: 3> gedit constraint.sdc
+@genus:root: 4> elaborate
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'ALU' from file 'ALU.v'.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'ALU' in file 'ALU.v' on line 31.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'ALU'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: ALU, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: ALU, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+---------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (ms) | 
+---------------------------------------------------------
+| hlo_clip_mux_input |       0 |       0 |         0.00 | 
+| hlo_clip           |       0 |       0 |         0.00 | 
+---------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+design:ALU
+@genus:root: 5> read_sdc constraint.sdc
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '11' of the SDC file 'constraint.sdc'  cannot find any ports named 'y'
+        : Use get_* commands to find the objects along with a wild card entry in the name of the object to check if the object is existing with different naming style.
+Error   : A required object parameter could not be found. [TUI-61] [set_mm_delay_fast]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '11' of the SDC file 'constraint.sdc': set_max_delay 8 -from [get_ports a] -to [get_ports y].
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '12' of the SDC file 'constraint.sdc'  cannot find any ports named 'y'
+Error   : A required object parameter could not be found. [TUI-61] [set_mm_delay_fast]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '12' of the SDC file 'constraint.sdc': set_max_delay 8 -from [get_ports b] -to [get_ports y].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '13' of the SDC file 'constraint.sdc'  cannot find any ports named 's'
+Warning : Maximum message print count reached. [MESG-11] [get_ports]
+        : Maximum print count of '3' reached for message 'SDC-208'.
+Error   : A required object parameter could not be found. [TUI-61] [set_mm_delay_fast]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
+Warning : Suppressed remaining 'SDC-208' warnings. [SDC-236]
+        : The line '13' of the SDC file 'constraint.sdc' had total 2 failures.
+        : Use the attribute 'collapse_sdc_msg' to control printing of warning 'SDC-208'.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '13' of the SDC file 'constraint.sdc': set_max_delay 8 -from [get_ports s] -to [get_ports y].
+Error   : Invalid SDC command option combination. [SDC-204] [set_io_delay]
+        : The set_io_delay command does not accept any invalid clock
+        : This option is not valid for the indicated SDC command. Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '16' of the SDC file 'constraint.sdc': set_input_delay -clock clk_ref -max 3 [get_ports a].
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '17' of the SDC file 'constraint.sdc': set_input_delay -clock clk_ref -min 1 [get_ports a].
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '19' of the SDC file 'constraint.sdc': set_input_delay -clock clk_ref -max 3 [get_ports b].
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '20' of the SDC file 'constraint.sdc': set_input_delay -clock clk_ref -min 1 [get_ports b].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '22' of the SDC file 'constraint.sdc'  cannot find any ports named 's'
+Error   : Invalid SDC command option combination. [SDC-204] [set_io_delay]
+        : The set_io_delay command does not accept empty ports lists
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '22' of the SDC file 'constraint.sdc': set_input_delay -clock clk_ref -max 3 [get_ports s].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '23' of the SDC file 'constraint.sdc'  cannot find any ports named 's'
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '23' of the SDC file 'constraint.sdc': set_input_delay -clock clk_ref -min 1 [get_ports s].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '26' of the SDC file 'constraint.sdc'  cannot find any ports named 'y'
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '26' of the SDC file 'constraint.sdc': set_output_delay -clock clk_ref 5 [get_ports y].
+Error   : A command argument did not match any of the acceptable command options. [TUI-64] [parse_options]
+        : The argument in question is '#'.
+        : Check the command usage and correct the input to the command.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '29' of the SDC file 'constraint.sdc': set_input_transition 0.2 [get_ports a]   # 0.2 ns rise/fall time.
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '31' of the SDC file 'constraint.sdc'  cannot find any ports named 's'
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'port' named '' could not be found.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '31' of the SDC file 'constraint.sdc': set_input_transition 0.2 [get_ports s].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '34' of the SDC file 'constraint.sdc'  cannot find any ports named 'y'
+Error   : Unknown TCL command in the SDC file. [SDC-234] [read_sdc]
+        : Invalid command 'set_output_transition'
+        : The 'read_sdc' command encountered a problem while trying to evaluate a command in the SDC file.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The TCL interpreter encountered the following error while processing line '34' of the SDC file 'constraint.sdc': invalid command name 'set_output_transition'.
+Statistics for commands executed by read_sdc:
+ "get_ports"                - successful      8 , failed      9 (runtime  0.01)
+ "set_input_delay"          - successful      0 , failed      6 (runtime  0.00)
+ "set_input_transition"     - successful      1 , failed      2 (runtime  0.00)
+ "set_max_delay"            - successful      0 , failed      3 (runtime  0.00)
+ "set_output_delay"         - successful      0 , failed      1 (runtime  0.00)
+Warning : Total failed commands during read_sdc are 21
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+read_sdc completed in 00:00:00 (hh:mm:ss)
+@genus:root: 6> read_sdc constraint.sdc
+Error   : Invalid SDC command option combination. [SDC-204] [set_io_delay]
+        : The set_io_delay command does not accept any invalid clock
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '3' of the SDC file 'constraint.sdc': set_input_delay -clock clk_dummy 2 [get_ports a].
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '4' of the SDC file 'constraint.sdc': set_input_delay -clock clk_dummy 2 [get_ports b].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '5' of the SDC file 'constraint.sdc'  cannot find any ports named 's'
+Error   : Invalid SDC command option combination. [SDC-204] [set_io_delay]
+        : The set_io_delay command does not accept empty ports lists
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '5' of the SDC file 'constraint.sdc': set_input_delay -clock clk_dummy 2 [get_ports s].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '8' of the SDC file 'constraint.sdc'  cannot find any ports named 'y'
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '8' of the SDC file 'constraint.sdc': set_output_delay -clock clk_dummy 5 [get_ports y].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '11' of the SDC file 'constraint.sdc'  cannot find any ports named 'y'
+Error   : A required object parameter could not be found. [TUI-61] [set_mm_delay_fast]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '11' of the SDC file 'constraint.sdc': set_max_delay 8 -from [get_ports a] -to [get_ports y].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '12' of the SDC file 'constraint.sdc'  cannot find any ports named 'y'
+Error   : A required object parameter could not be found. [TUI-61] [set_mm_delay_fast]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '12' of the SDC file 'constraint.sdc': set_max_delay 8 -from [get_ports b] -to [get_ports y].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '13' of the SDC file 'constraint.sdc'  cannot find any ports named 's'
+Error   : A required object parameter could not be found. [TUI-61] [set_mm_delay_fast]
+        : An object of type 'clock|port|inst|hinst|pin|hpin|port_bus|hpin_bus' named '' could not be found.
+Warning : Suppressed remaining 'SDC-208' warnings. [SDC-236]
+        : The line '13' of the SDC file 'constraint.sdc' had total 2 failures.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '13' of the SDC file 'constraint.sdc': set_max_delay 8 -from [get_ports s] -to [get_ports y].
+Warning : Maximum message print count reached. [MESG-11] [read_sdc]
+        : Maximum print count of '20' reached for message 'SDC-202'.
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '22' of the SDC file 'constraint.sdc'  cannot find any ports named 's'
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '23' of the SDC file 'constraint.sdc'  cannot find any ports named 's'
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '26' of the SDC file 'constraint.sdc'  cannot find any ports named 'y'
+Error   : A command argument did not match any of the acceptable command options. [TUI-64] [parse_options]
+        : The argument in question is '#'.
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '31' of the SDC file 'constraint.sdc'  cannot find any ports named 's'
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'port' named '' could not be found.
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '34' of the SDC file 'constraint.sdc'  cannot find any ports named 'y'
+Error   : Unknown TCL command in the SDC file. [SDC-234] [read_sdc]
+        : Invalid command 'set_output_transition'
+Statistics for commands executed by read_sdc:
+ "get_ports"                - successful     10 , failed     11 (runtime  0.00)
+ "set_input_delay"          - successful      0 , failed      9 (runtime  0.00)
+ "set_input_transition"     - successful      1 , failed      2 (runtime  0.00)
+ "set_max_delay"            - successful      0 , failed      3 (runtime  0.00)
+ "set_output_delay"         - successful      0 , failed      2 (runtime  0.00)
+Warning : Total failed commands during read_sdc are 27
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+read_sdc completed in 00:00:01 (hh:mm:ss)
+@genus:root: 7> clear
+@genus:root: 8> exit
+
+Lic Summary:
+[12:10:29.519002] Cdslmd servers: CadenceServer
+[12:10:29.519018] Feature usage summary:
+[12:10:29.519019] Genus_Synthesis
+
+Normal exit.

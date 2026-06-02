@@ -1,0 +1,9 @@
+ncelab(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+ALU dut(a,b,en,opcode,result);
+        |
+ncelab: *W,CUVMPW (./ALU_tb.v,28|8): port sizes differ in port connection (16/1).
+ALU dut(a,b,en,opcode,result);
+          |
+ncelab: *W,CUVMPW (./ALU_tb.v,28|10): port sizes differ in port connection (16/1).
+ncelab: Memory Usage - 49.9M program + 32.6M data = 82.5M total (Peak 87.6M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.4s, 12.2% cpu)

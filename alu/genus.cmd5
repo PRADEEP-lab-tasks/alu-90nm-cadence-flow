@@ -1,0 +1,25 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.14-s082_1, built Jun 23 2022 14:32:08
+
+# Date: Sat Aug 09 13:45:21 2025
+# Host: cadence8 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*1physical cpu*Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz 6144KB)
+# OS:   Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+read_libs /home/install/FOUNDRY/digital/90nm/dig/lib/fast.lib
+read_hdl ALU.v
+read_sdc constraints.sdc
+elaborate
+read_sdc constraints.sdc
+read_sdc constraints.sdc
+elaborate
+read_sdc constraints.sdc
+read_sdc constraints.sdc
+read_sdc constraint.sdc
+gui_show
+syn_generic
+syn_map
+syn_opt
+report_area > ALU_opt_netlist_area.txt
+report_power > ALU_opt_netlist_power.txt
+write_hdl > alu_netlist.v
+write_sdc > output.sdc
+exit

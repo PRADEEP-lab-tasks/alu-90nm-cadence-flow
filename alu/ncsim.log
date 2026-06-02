@@ -1,0 +1,30 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created^C
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 269.5M data = 308.1M total (308.1M Peak)
+ncsim: CPU Usage - 1.9s system + 1.2s user = 3.1s total (219.8s, 1.4% cpu)
+code=1001,result=         1
+a=22115,b=31501,en=1,opcode=1101,result=         2
+a=33893,b=21010,en=1,opcode=0001,result=         1
+a=52493,b=61814,en=1,opcode=1101,result=         1
+a=22509,b=63372,en=1,opcode=1001,result=         1
+a= 9414,b=33989,en=1,opcode=1010,result=4294967295
+a=63461,b=29303,en=1,opcode=0010,result=         1
+a=56207,b=27122,en=1,opcode=1110,result=         1
+a=31464,b=20165,en=1,opcode=1100,result=4294967294
+a=10429,b=22573,en=1,opcode=0101,result=         1
+Simulation complete via $finish(1) at time 200 NS + 0
+./ALU_tb.v:44 $finish();
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 273.5M data = 312.2M total (315.7M Peak)
+ncsim: CPU Usage - 1.2s system + 0.7s user = 1.9s total (128.2s, 1.5% cpu)
+M Peak)
+ncsim: CPU Usage - 1.9s system + 1.0s user = 2.9s total (196.9s, 1.5% cpu)
