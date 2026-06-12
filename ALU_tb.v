@@ -1,22 +1,20 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Pradeep's World
+// Engineer: PRADEEP L
 // 
 // Create Date: 12/30/2024 06:44:39 PM
-// Design Name: 
+// Design Name: Arithemati Logic Unit
 // Module Name: ALU_tb
 // Project Name: 
-// Target Devices: 
-// Tool Versions: 
+
 // Description: 
 // 
 // Dependencies: 
 // 
 // Revision:
 // Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Additional Comments:Used only for simulation using ncsim launch
 //////////////////////////////////////////////////////////////////////////////////
 
 
