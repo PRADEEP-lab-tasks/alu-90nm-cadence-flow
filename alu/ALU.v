@@ -1,23 +1,16 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Pradeep's World
+// Engineer: PRADEEP L 
 // 
 // Create Date: 12/30/2024 06:36:08 PM
-// Design Name: 
+// Design Name: Arithematic Logic Unit
 // Module Name: ALU
 // Project Name: 
-// Target Devices: 
-// Tool Versions: 
+// Target technology: 90nm
+// Tool Versions: Version 21.14
 // Description: 
 // 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 
 module ALU(
