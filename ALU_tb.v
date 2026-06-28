@@ -2,7 +2,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Company: Pradeep's World
 // Engineer: PRADEEP L
-// 
 // Create Date: 12/30/2024 06:44:39 PM
 // Design Name: Arithemati Logic Unit
 // Module Name: ALU_tb
