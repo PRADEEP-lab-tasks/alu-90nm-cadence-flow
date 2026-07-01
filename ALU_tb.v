@@ -2,14 +2,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Company: Pradeep's World
 // Engineer: PRADEEP L
-// Create Date: 12/30/2024 06:44:39 PM
+// Create Date: 12/30/2025 06:44:39 PM
 // Design Name: Arithemati Logic Unit
 // Module Name: ALU_tb
-// Project Name: 
-
-// Description: 
-// Dependencies: 
-// Revision:
+// Project Name: 90nm ALU
 // Revision 0.01 - File Created
 // Additional Comments:Used only for simulation using ncsim launch
 //////////////////////////////////////////////////////////////////////////////////
