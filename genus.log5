@@ -1565,9 +1565,4 @@ GTD-WARNING: File (top.mtarpt) does not contain any timing paths.
 Finished SDC export (command execution time mm:ss (real) = 00:01).
 @genus:root: 19> exit
 
-Lic Summary:
-[15:12:16.060169] Cdslmd servers: CadenceServer
-[15:12:16.060176] Feature usage summary:
-[15:12:16.060176] Genus_Synthesis
-
 Normal exit.
