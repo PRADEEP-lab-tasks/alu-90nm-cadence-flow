@@ -2,13 +2,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Company: Pradeep's World
 // Engineer: PRADEEP L 
-// Create Date: 12/30/2024 06:36:08 PM
+// Create Date: 12/30/2025 06:36:08 PM
 // Design Name: Arithematic Logic Unit
 // Module Name: ALU
-// Project Name: 
+// Project Name: 90nm ALU
 // Target technology: 90nm
 // Tool Versions: Version 21.14
-// Description: 
 ////////////////////////////////////////////////////////////////////////
 
 
