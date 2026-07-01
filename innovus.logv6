@@ -193,9 +193,7 @@
 [08/14 11:48:55     22s] Reading timing constraints file 'output.sdc' ...
 [08/14 11:48:55     22s] Current (total cpu=0:00:22.7, real=0:01:21, peak res=1287.0M, current mem=1286.6M)
 [08/14 11:48:56     22s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File output.sdc, Line 9).
-[08/14 11:48:56     22s] 
 [08/14 11:48:56     22s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File output.sdc, Line 10).
-[08/14 11:48:56     22s] 
 [08/14 11:48:56     22s] INFO (CTE): Reading of timing constraints file output.sdc completed, with 2 WARNING
 [08/14 11:48:56     22s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=1316.6M, current mem=1316.0M)
 [08/14 11:48:56     22s] Current (total cpu=0:00:22.8, real=0:01:22, peak res=1316.6M, current mem=1316.0M)
@@ -241,7 +239,6 @@
 [08/14 11:48:57     22s] 
 [08/14 11:48:57     22s] TimeStamp Deleting Cell Server End ...
 [08/14 11:48:57     22s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1318.4M, current mem=1318.4M)
-[08/14 11:48:57     22s] 
 [08/14 11:48:57     22s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
 [08/14 11:48:57     22s] Summary for sequential cells identification: 
 [08/14 11:48:57     22s]   Identified SBFF number: 112
