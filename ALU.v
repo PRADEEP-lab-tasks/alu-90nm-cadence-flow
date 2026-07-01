@@ -8,6 +8,9 @@
 // Project Name: 90nm ALU
 // Target technology: 90nm
 // Tool Versions: Version 21.14
+//Description: A behavioral Verilog model of a 32-bit Arithmetic Logic Unit (ALU) using 90nm technology. 
+//             Supports arithmetic (add, sub, mul, div, inc, dec), logic (AND, OR, XOR, NOT, NAND, NOR, XNOR), 
+//             and shift operations controlled by a 4-bit opcode with enable signal.
 ////////////////////////////////////////////////////////////////////////
 
 
