@@ -145,8 +145,7 @@
 [08/14 11:48:54     22s] Cap table was created using Encounter 05.20-s112_1.
 [08/14 11:48:54     22s] Process name: gpdk090_9l.
 [08/14 11:48:54     22s] Importing multi-corner RC tables ... 
-[08/14 11:48:54     22s] Summary of Active RC-Corners : 
-[08/14 11:48:54     22s]  
+[08/14 11:48:54     22s] Summary of Active RC-Corners :  
 [08/14 11:48:54     22s]  Analysis View: wc
 [08/14 11:48:54     22s]     RC-Corner Name        : RC
 [08/14 11:48:54     22s]     RC-Corner Index       : 0
