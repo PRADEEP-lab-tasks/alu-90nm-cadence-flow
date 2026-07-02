@@ -1,4 +1,4 @@
-//Timing Report
+//Timing Report of RTL Netlist//
 
 VERSION {1.0}
 PTDEF {instance} {pin} {cell} {edge} {clock_edge} {clock} {phase}
