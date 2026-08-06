@@ -9,10 +9,7 @@ WARNING: This version of the tool is 1142 days old.
 Threads Configured:3
 
   Message Summary for Library fast.lib:
-  *************************************
-  Missing a function attribute in the output pin definition. [LBR-518]: 1
-  Missing library level attribute. [LBR-516]: 1
-  *************************************
+
  
 Info    : Created nominal operating condition. [LBR-412]
         : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast.lib'.
