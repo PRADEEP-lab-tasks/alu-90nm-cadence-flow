@@ -5,7 +5,7 @@
 // Create Date: 12/30/2025 06:36:08 PM
 // Design Name: Arithematic Logic Unit
 // Module Name: ALU
-// Project Name: 
+// Project Name: 90nm ALU
 // Target technology: 90nm
 // Tool Versions: Version 21.14
 //Description: A behavioral Verilog model of a 32-bit Arithmetic Logic Unit (ALU) using 90nm technology. 
