@@ -2,7 +2,7 @@
 [08/14 11:48:12     16s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
 [08/14 11:48:21     18s] 
 [08/14 11:48:21     18s] **INFO:  MMMC transition support version v31-84 
-[08/14 11:48:21     18s] 
+
 [08/14 11:48:21     18s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 [08/14 11:48:21     18s] <CMD> suppressMessage ENCEXT-2799
 [08/14 11:48:23     18s] <CMD> getVersion
