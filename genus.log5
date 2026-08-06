@@ -8,6 +8,7 @@ WARNING: This version of the tool is 1142 days old.
 
 Threads Configured:3
 
+
   Message Summary for Library fast.lib:
 
  
@@ -53,9 +54,7 @@ Stage: post_elab
 UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   elaborate
 design:ALU
-@genus:root: 5> read_sdc constraints.sdc
-Error: Unable to open constraints.sdc
-Failed on read_sdc
+
 @genus:root: 6> read_sdc constraints.sdc
 Error: Unable to open constraints.sdc
 Failed on read_sdc
