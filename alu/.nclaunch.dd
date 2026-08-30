@@ -12,7 +12,7 @@ ToolOption_NCVlog/AMS { -work worklib -cdslib /home/students/Desktop/PRACTICE_DE
 ToolOption_NCVlog/SV { -work worklib -cdslib /home/students/Desktop/PRACTICE_DESIGNS/Digital_Projects/alu/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
 ToolOption_irun {-gui {} +linedebug +access rwc -q} \
 ToolOption_NCElab { -work worklib -cdslib /home/students/Desktop/PRACTICE_DESIGNS/Digital_Projects/alu/cds.lib -logfile ncelab.log -errormax 15 -access +wc -status} \
-ToolOption_NCSim { -gui -cdslib /home/students/Desktop/PRACTICE_DESIGNS/Digital_Projects/alu/cds.lib -logfile ncsim.log -errormax 15 -status} \
+ToolOption_NCSim { -gui -cdslib /home/students/PRACTICE_DESIGNS/Digital_Projects/alu/cds.lib -logfile ncsim.log -errormax 15 -status} \
 ToolOption_NCSdfc {-logfile ncsdfc.log -compile -status} \
 ToolOption_HAL {-logfile hal.log} \
 ToolOption_SimVision {} \
