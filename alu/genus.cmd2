@@ -10,6 +10,7 @@ gui_show
 read_hdl ALU.v
 gui_show
 elaborate
+
 read_sdc constraint.sdc
 syn_generic
 syn_map
