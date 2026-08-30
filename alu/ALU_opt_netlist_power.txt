@@ -1,6 +1,7 @@
 Instance: /ALU
 Power Unit: W
 PDB Frames: /stim#0/frame#0
+
   -------------------------------------------------------------------------
     Category         Leakage     Internal    Switching        Total    Row%
   -------------------------------------------------------------------------
