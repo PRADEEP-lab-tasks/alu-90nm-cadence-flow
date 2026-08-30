@@ -5,6 +5,7 @@
 #  Design:            ALU
 #  Command:           verify_drc
 ###############################################################
+
 #set_verify_drc_mode -check_ndr_spacing auto -check_only default -check_same_via_cell true -disable_rules "" -exclude_pg_net false -ignore_cell_blockage false -ignore_trial_route false -limit 1000 -report ALU.drc.rpt -use_min_spacing_on_block_obs auto
 
 SHORT: ( Metal Short ) Special Wire of Net Vdd & Pin of Cell ENDCAP_1  ( Metal1 )
